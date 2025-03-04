@@ -1,0 +1,199 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css"; */
+
+
+  div.lo {
+ 
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+  }
+  
+  div.ln {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  footer
+{
+    margin-top:250px;
+    width:100%;
+    height:150px;
+}
+
+.aboutus1 img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  transition: all 0.3s ease-in-out ;
+}
+
+@media (max-width: 784px){
+  .aboutus1 img {
+    max-width: 600px;
+    transition: all 0.3s ease-in-out ;
+  }
+  }
+  
+  @media (max-width: 538px){
+    .aboutus1 img {
+      max-width: 300px;
+      transition: all 0.3s ease-in-out ;
+    }
+    }
+  
+    @media (max-width: 333px){
+      .aboutus1 img {
+        max-width: 150px;
+        transition: all 0.3s ease-in-out ;
+      }
+      }
+
+
+
+
+
+.aboutus2 img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  transition: all 0.3s ease-in-out ;
+}
+
+@media (max-width: 784px){
+  .aboutus2 img {
+    max-width: 600px;
+    transition: all 0.3s ease-in-out ;
+  }
+  }
+  
+  @media (max-width: 538px){
+    .aboutus2 img {
+      max-width: 300px;
+      transition: all 0.3s ease-in-out ;
+    }
+    }
+  
+    @media (max-width: 333px){
+      .aboutus2 img {
+        max-width: 350px;
+        transition: all 0.3s ease-in-out ;
+      }
+      }
+
+.aboutus3 img {
+  width: 100%;
+  max-width: 700px  ;
+  height: auto;
+  transition: all 0.3s ease-in-out ;
+}
+
+@media (max-width: 784px){
+  .aboutus3 img {
+    max-width: 500px;
+    transition: all 0.3s ease-in-out ;
+  }
+  }
+  
+  @media (max-width: 538px){
+    .aboutus3 img {
+      max-width: 300px;
+      transition: all 0.3s ease-in-out ;
+    }
+    }
+  
+    @media (max-width: 333px){
+      .aboutus3 img {
+        max-width: 150px;
+        transition: all 0.3s ease-in-out ;
+      }
+      }
+   
+
+          
+         
+            
+
+/* imagenes adaptables */
+
+.imagen7 {
+  width: 100%; /* Ajusta la imagen al contenedor */
+  max-width: 700px; /* Tamaño máximo inicial */
+  height: auto; /* Mantiene la proporción */
+  transition: all 0.3s ease-in-out; /* Suaviza el cambio de tamaño */
+}
+
+@media (max-width: 915px) {
+  .imagen7 {
+    max-width: 500px; ;
+    transition: all 0.3s ease-in-out ;
+  }
+}
+
+@media (max-width: 500px) {
+  .imagen7 {
+    max-width: 400px  ;
+    transition: all 0.3s ease-in-out ;
+  }
+}
+
+.laptop6 {
+  width: 100%; /* Ajusta la imagen al contenedor */
+  max-width: 800px; /* Tamaño máximo inicial */
+  height: auto; /* Mantiene la proporción */
+  transition: all 0.3s ease-in-out; /* Suaviza el cambio de tamaño */
+}
+
+/* Cuando la pantalla sea menor o igual a 915px */
+@media (max-width: 915px) {
+  .laptop6 {
+    max-width: 500px; /* Reduce el tamaño */
+  }
+}
+
+/* Cuando la pantalla sea menor o igual a 600px (más pequeña) */
+@media (max-width: 500px) {
+  .laptop6 {
+    max-width: 400px; /* Se hace aún más pequeña */
+  }
+}
+
+
+/* 🌙 Modo Oscuro */
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* 🟡 Estilos de PrimeNG en Modo Oscuro */
+.dark-theme p-button {
+  border-color: #666 !important;
+  color: #fff !important;
+}
+
+.dark-theme p-button:hover {
+  border-color: #fff !important;
+}
+
+.dark-theme .p-card {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+.dark-theme .p-menubar{
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+.dark-theme .p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+.dark-theme .lo{
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+.dark-theme .ln{
+  background-color: #2a2a2a;
+  color: #ffffff;
+}

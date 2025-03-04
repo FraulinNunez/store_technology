@@ -1,0 +1,147 @@
+
+
+<div>
+    <div class="flex justify-content-center" >     
+        <h2 class="font-bold" >Find the best computer for you</h2> 
+    </div>
+    <div class="text-center" >
+        <div>Explore wide range of pc</div>
+    </div>
+
+    <div class="flex justify-content-center mb-2 " >
+        <img class="imagen7" src="imagen7.png" alt=""  >
+    </div>
+
+
+    <p-carousel 
+    [value]="products" 
+    [numVisible]="3" 
+    [numScroll]="1" 
+    [responsiveOptions]="responsiveOptions">
+        <!-- <ng-template pTemplate="header">
+            <p>Header content</p>
+        </ng-template> -->
+        <ng-template let-product pTemplate="item">
+            <div class="border-1 surface-border border-round m-2 p-3">
+                <div class="mb-3">
+                    <div class="relative mx-auto">
+                        <img 
+                            src="{{ product.image }}" 
+                            [alt]="product.name" 
+                            class="w-full border-round" />
+                        <p-tag 
+                            [value]="product.inventoryStatus" 
+                            [severity]="getSeverity(product.inventoryStatus)" 
+                            class="absolute" 
+                            [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                    </div>
+                </div>
+                <div class="mb-3 font-medium">
+                    {{ product.name }}
+                </div>
+                <div class="flex justify-content-between align-items-center">
+                    <div class="mt-0 font-semibold text-xl">
+                        {{ '$' + product.price }}
+                    </div>
+                    <span>
+                        <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                        <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+        <!-- <ng-template pTemplate="footer">
+            <p>Footer content</p>
+        </ng-template> -->
+</p-carousel>
+
+
+
+
+
+
+
+
+<div class=" mt-5 " >
+    <div class="text-center mb-2 " >
+        <h2 class="font-bold" >Discover the ideal laptop for your setup</h2>
+        <div class="text-900  " >Choose your laptop</div>
+    </div>
+
+
+    <div class="flex justify-content-center mb-2 " >
+        <img class="laptop6" src="laptop6.png" alt=""  >
+    </div>
+
+<p-carousel 
+[value]="products1" 
+[numVisible]="3" 
+[numScroll]="1" 
+[responsiveOptions]="responsiveOptions">
+    <!-- <ng-template pTemplate="header">
+        <p>Header content</p>
+    </ng-template> -->
+    <ng-template let-product1 pTemplate="item">
+        <div class="border-1 surface-border border-round m-2 p-3">
+            <div class="mb-3">
+                <div class="relative mx-auto">
+                    <img 
+                        src="{{ product1.image }}" 
+                        [alt]="product1.name" 
+                        class="w-full border-round" />
+                    <p-tag 
+                        [value]="product1.inventoryStatus" 
+                        [severity]="getSeverity(product1.inventoryStatus)" 
+                        class="absolute" 
+                        [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                </div>
+            </div>
+            <div class="mb-3 font-medium">
+                {{ product1.name }}
+            </div>
+            <div class="flex justify-content-between align-items-center">
+                <div class="mt-0 font-semibold text-xl">
+                    {{ '$' + product1.price }}
+                </div>
+                <span>
+                    <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />
+                    <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />
+                </span>
+            </div>
+        </div>
+    </ng-template>
+    <!-- <ng-template pTemplate="footer">
+        <p>Footer content</p>
+    </ng-template> -->
+</p-carousel>
+
+
+
+<footer class="bg-gray-600 p-4 text-white ">
+    <div class="align-items-center ">
+      <div class="p-col text-center ">
+        <p class="m-0 font-semibold">Fraulin Nuñez</p>
+      </div>
+      <div class="p-col text-center ">
+        <p class="m-0">Teléfono: <a href="tel:+18098612456" class="text-white">809-861-2456</a></p>
+      </div>
+
+      <div class="flex justify-content-center mt-2 ">
+
+            <div class="mr-2" >
+          <a href="https://www.facebook.com/tuperfil" target="_blank" class="p-link">
+            <i class="pi pi-facebook text-white "></i>
+          </a>
+        </div>
+
+         <div class="mr-2" > 
+        <a href="https://www.instagram.com/tuperfil" target="_blank" class="p-link">
+            <i class="pi pi-instagram text-white "></i>
+          </a>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </footer>

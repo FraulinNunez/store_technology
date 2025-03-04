@@ -1,0 +1,136 @@
+<h1 class="text-center">Contactanos</h1>
+
+<div [formGroup]="miFormulario">
+  <div class="flex flex-column align-items-center mt-5 w-full">
+    <div class="card mb-4 w-10">
+      <p-floatLabel class="w-full">
+        <input
+          type="string"
+          pInputText
+          class="w-full"
+          formControlName="nombreUsuario"
+        />
+        <label for="username">UserName</label>
+      </p-floatLabel>
+
+      <div *ngIf="miFormulario.get('nombreUsuario')?.invalid && miFormulario.get('nombreUsuario')?.touched" >
+            <div class="flex pi pi-exclamation-triangle text-yellow-600 mt-1">
+              <div class="ml-2" >Por favor complete su nombre, este campo es obligatorio</div>
+
+            </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="card mb-4 w-10">
+      <p-floatLabel class="w-full">
+        <input
+          type="string"
+          pInputText
+          class="w-full"
+          formControlName="emailUsuario"
+        />
+        <label for="email">Email</label>
+      </p-floatLabel>
+
+
+      <div *ngIf="miFormulario.get('emailUsuario')?.invalid && miFormulario.get('emailUsuario')?.touched" >
+        <div class="flex pi pi-exclamation-triangle text-yellow-600 mt-1">
+          <div class="ml-2" >Por favor complete el correo electronico, este campo es obligatorio</div>
+
+        </div>
+  </div>
+    </div>
+
+    <div class="card mb-4 w-10">
+      <p-floatLabel class="w-full">
+        <input
+          type="string"
+          pInputText
+          class="w-full"
+          formControlName="companyUsuario"
+        />
+        <label for="organization">Company/Organization</label>
+      </p-floatLabel>
+      <div *ngIf="miFormulario.get('companyUsuario')?.touched && !miFormulario.get('companyUsuario')?.value " >
+        <div class="flex pi pi-exclamation-triangle text-yellow-600 mt-1">
+          <div class="ml-2" >Por favor si cuenta con la informacion completela - No es obligatorio</div>
+
+        </div>
+  </div>
+
+    </div>
+
+    <div class="card w-10">
+      <textarea
+        rows="5"
+        cols="30"
+        pInputTextarea
+        class="w-full"
+        formControlName="descripcionUsuario"
+        [autoResize]="true"
+        placeholder="Descripcion"
+      ></textarea>
+      <div *ngIf="miFormulario.get('descripcionUsuario')?.invalid &&  miFormulario.get('descripcionUsuario')?.touched ">
+        <div class="flex pi pi-exclamation-triangle text-yellow-600 mt-1">
+          <div class="ml-2 text-center " >Por favor describa el articulo que le interesa, este campo es obligatorio</div>
+
+        </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="flex justify-content-center mt-2 w-full">
+    <p-toast />
+    <p-button
+      icon="pi pi-angle-right"
+      iconPos="right"
+      label="Enviar correo electronico "
+      (onClick)="Enviar()"
+      [disabled]="!miFormulario.valid"
+    ></p-button>   
+  </div>
+  <!-- <div *ngIf="miFormulario.valid">
+    <div class="flex text-center pi pi-check text-green-600 mt-1">
+      <div class="ml-2" >Felicidades ya puedes enviar el formulario</div>
+
+    </div>
+  </div> -->
+</div>
+
+<footer class="bg-gray-600 p-4 text-white">
+  <div class="align-items-center">
+    <div class="p-col text-center">
+      <p class="m-0 font-semibold">Fraulin Nuñez</p>
+    </div>
+    <div class="p-col text-center">
+      <p class="m-0">
+        Teléfono: <a href="tel:+18098612456" class="text-white">809-861-2456</a>
+      </p>
+    </div>
+
+    <div class="flex justify-content-center mt-2">
+      <div class="mr-2">
+        <a
+          href="https://www.facebook.com/tuperfil"
+          target="_blank"
+          class="p-link"
+        >
+          <i class="pi pi-facebook text-white"></i>
+        </a>
+      </div>
+
+      <div class="mr-2">
+        <a
+          href="https://www.instagram.com/tuperfil"
+          target="_blank"
+          class="p-link"
+        >
+          <i class="pi pi-instagram text-white"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
