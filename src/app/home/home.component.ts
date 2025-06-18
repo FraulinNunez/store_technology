@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
  products: Products [] = [];
  responsiveOptions: any[] | undefined;
 
- products1: Products [] = [];
  
 
 
@@ -35,17 +34,9 @@ export class HomeComponent implements OnInit {
     this.servicioprueba1.obtenerArreglo().subscribe((datos: Products[])=>{
       this.products = datos;
       console.log('mi arreglo', this.products)
-
-
-      
-
     })
 
 
-    this.servicioprueba1.obtenerArreglo1().subscribe((datos: Products1[])=>{
-        this.products1 = datos;
-        console.log('mi arreglo', this.products1)
-    })
 
     this.responsiveOptions = [
       {
@@ -68,21 +59,18 @@ export class HomeComponent implements OnInit {
     
   }
 
-  getSeverity (products: Products) {
-    switch (products.inventoryStatus) {
-        case 'INSTOCK':
-            return 'success';
-
-        case 'LOWSTOCK':
-            return 'warning';
-
-        case 'OUTOFSTOCK':
-            return 'danger';
-
-        default:
-            return undefined;
-    }
-};
+  getSeverity(status: string) {
+  switch (status) {
+    case 'INSTOCK':
+      return 'success';
+    case 'LOWSTOCK':
+      return 'warning';
+    case 'OUTOFSTOCK':
+      return 'danger';
+    default:
+      return undefined;
+  }
+}
 
 
 
