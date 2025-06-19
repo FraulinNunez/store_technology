@@ -38,15 +38,19 @@ export interface Products1{
 export class ServiciopruebaService {
 
   constructor() { }
+
+  itemsCarritoBehSubject = new BehaviorSubject<any[] | undefined>(undefined)
+  itemsCarritoSubject = this.itemsCarritoBehSubject.asObservable()
   
    private baseHref = document.getElementsByTagName('base')[0].href;
 
 private miArregloSubject = new BehaviorSubject<Products[]>([
+  
   {
     id: '1000',
-    code: 'lp-001',
-    name: 'Laptop Modelo 1',
-    description: 'Potente laptop con procesador Intel i5, 8GB RAM y disco SSD de 256GB para un rendimiento eficiente.',
+    code: 'zen-001',
+    name: 'ZenBook Air X1',
+    description: 'Ultraligera y potente, ideal para estudiantes y profesionales en movimiento. Incluye procesador Intel i5, 8GB RAM y SSD de 256GB.',
     image: `${this.baseHref}laptop1.png`,
     price: 65000,
     category: 'Laptops',
@@ -56,9 +60,9 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
   },
   {
     id: '1001',
-    code: 'lp-002',
-    name: 'Laptop Modelo 2',
-    description: 'Laptop ligera y portátil con pantalla Full HD, ideal para trabajos y entretenimiento.',
+    code: 'fusion-002',
+    name: 'FusionBook Pro 14',
+    description: 'Equilibrio perfecto entre diseño y rendimiento con pantalla Full HD de 14", 8GB RAM y un estilo moderno para uso diario.',
     image: `${this.baseHref}laptop2.png`,
     price: 70000,
     category: 'Laptops',
@@ -68,9 +72,9 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
   },
   {
     id: '1002',
-    code: 'lp-003',
-    name: 'Laptop Modelo 3',
-    description: 'Diseño elegante con procesador AMD Ryzen, 16GB RAM y batería de larga duración.',
+    code: 'ryzen-003',
+    name: 'RyzenEdge S7',
+    description: 'Con procesador AMD Ryzen 7 y 16GB RAM, esta laptop es perfecta para multitarea, programación y diseño gráfico.',
     image: `${this.baseHref}laptop3.png`,
     price: 72000,
     category: 'Laptops',
@@ -80,9 +84,9 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
   },
   {
     id: '1003',
-    code: 'lp-004',
-    name: 'Laptop Modelo 4',
-    description: 'Laptop para gaming con tarjeta gráfica dedicada y sistema de refrigeración avanzada.',
+    code: 'gamer-004',
+    name: 'GamerStorm GTX',
+    description: 'Potencia brutal para gamers exigentes: tarjeta gráfica RTX, sistema de refrigeración avanzada y teclado RGB retroiluminado.',
     image: `${this.baseHref}laptop4.png`,
     price: 95000,
     category: 'Laptops',
@@ -92,9 +96,9 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
   },
   {
     id: '1004',
-    code: 'lp-005',
-    name: 'Laptop Modelo 5',
-    description: 'Laptop versátil con excelente rendimiento para tareas diarias y multimedia.',
+    code: 'media-005',
+    name: 'MediaBook Flex 360',
+    description: 'Versátil y confiable. Con pantalla táctil abatible 360°, ideal para streaming, estudios o trabajo desde casa.',
     image: `${this.baseHref}laptop1.png`,
     price: 67000,
     category: 'Laptops',
@@ -102,6 +106,8 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
     inventoryStatus: 'INSTOCK',
     rating: 4
   }
+
+
 ]);
 
 

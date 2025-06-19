@@ -23,11 +23,17 @@ import { CarouselModule } from 'primeng/carousel';
 export class HomeComponent implements OnInit {
  products: Products [] = [];
  responsiveOptions: any[] | undefined;
+ 
 
  
 
 
  constructor(private servicioprueba1: ServiciopruebaService){}
+
+ ItemSeleccionado(item: any){
+  console.log(item, 'item')
+  this.servicioprueba1.itemsCarritoBehSubject.next(item);
+ }
  
   ngOnInit(): void {
 
