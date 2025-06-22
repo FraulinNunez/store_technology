@@ -45,11 +45,7 @@
             {{ product.price  | currency }}
           </div>
           <span>
-            <p-button
-              icon="pi pi-heart"
-              severity="secondary"
-              [outlined]="true"
-            />
+           
             
             <p-button icon="pi pi-shopping-cart" styleClass="ml-2"
                 (onClick)="ItemSeleccionado(product)"
@@ -107,11 +103,6 @@
               {{ product1.price  | currency }}
             </div>
             <span>
-              <p-button
-                icon="pi pi-heart"
-                severity="secondary"
-                [outlined]="true"
-              />
               <p-button icon="pi pi-shopping-cart" styleClass="ml-2"
                 (onClick)="ItemSeleccionado(product1)"
               />
