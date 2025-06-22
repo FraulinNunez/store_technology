@@ -51,14 +51,14 @@
       </a>
     </div>
   </ng-template>
-  <p-toast styleClass="w-23rem" ></p-toast>
+  <p-toast styleClass="w-23rem" position="top-center" ></p-toast>
 
   <p-overlayPanel #op [style]="{ width: '100%', maxWidth: '30rem' }">
     <div *ngIf="datosItems?.length > 0; else nodata">
       <div class="font-bold font-medium text-center mb-2 mt-2">
         Carrito de compras
       </div>
-      <p-toast></p-toast>
+      <p-toast styleClass="w-21rem" position="top-center" ></p-toast>
 
       <!-- Contenedor con altura mínima y scroll -->
       <div
