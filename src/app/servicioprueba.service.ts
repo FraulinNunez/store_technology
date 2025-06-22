@@ -47,7 +47,7 @@ export class ServiciopruebaService {
 private miArregloSubject = new BehaviorSubject<Products[]>([
   
   {
-    id: '1000',
+    id: '1',
     code: 'zen-001',
     name: 'ZenBook Air X1',
     description: 'Ultraligera y potente, ideal para estudiantes y profesionales en movimiento. Incluye procesador Intel i5, 8GB RAM y SSD de 256GB.',
@@ -59,7 +59,7 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
     rating: 5
   },
   {
-    id: '1001',
+    id: '2',
     code: 'fusion-002',
     name: 'FusionBook Pro 14',
     description: 'Equilibrio perfecto entre diseño y rendimiento con pantalla Full HD de 14", 8GB RAM y un estilo moderno para uso diario.',
@@ -71,7 +71,7 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
     rating: 4
   },
   {
-    id: '1002',
+    id: '3',
     code: 'ryzen-003',
     name: 'RyzenEdge S7',
     description: 'Con procesador AMD Ryzen 7 y 16GB RAM, esta laptop es perfecta para multitarea, programación y diseño gráfico.',
@@ -83,7 +83,7 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
     rating: 5
   },
   {
-    id: '1003',
+    id: '4',
     code: 'gamer-004',
     name: 'GamerStorm GTX',
     description: 'Potencia brutal para gamers exigentes: tarjeta gráfica RTX, sistema de refrigeración avanzada y teclado RGB retroiluminado.',
@@ -95,7 +95,7 @@ private miArregloSubject = new BehaviorSubject<Products[]>([
     rating: 5
   },
   {
-    id: '1004',
+    id: '5',
     code: 'media-005',
     name: 'MediaBook Flex 360',
     description: 'Versátil y confiable. Con pantalla táctil abatible 360°, ideal para streaming, estudios o trabajo desde casa.',

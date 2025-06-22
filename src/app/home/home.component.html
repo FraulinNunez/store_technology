@@ -9,6 +9,7 @@
   <div class="flex justify-content-center mb-2">
     <img class="imagen7" src="imagen7.png" alt="" />
   </div>
+  <p-toast position="top-center" ></p-toast>
 
   <p-carousel
     [value]="products"
@@ -49,6 +50,7 @@
               severity="secondary"
               [outlined]="true"
             />
+            
             <p-button icon="pi pi-shopping-cart" styleClass="ml-2"
                 (onClick)="ItemSeleccionado(product)"
               />

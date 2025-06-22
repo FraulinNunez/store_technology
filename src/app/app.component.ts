@@ -45,6 +45,29 @@ export class AppComponent implements OnInit {
     }
   }
 
+
+  comprar(){
+    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Gracias por su compra' });
+    console.log('hola')
+    setTimeout(() => {
+      this.todositems.length = 0;
+    }, 1000);
+    
+    console.log(this.todositems)
+
+  }
+
+  eliminar(item: any) {
+  const index = this.todositems.indexOf(item);
+  if (index !== -1) {
+    this.todositems.splice(index, 1);
+    this.numItems = this.todositems.length;
+  }
+}
+
+  
+
+
   ngOnInit(): void {
     this.items = [
       {
